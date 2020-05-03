@@ -8,6 +8,7 @@ body{
     margin: 0 auto;
 }
 header a{
+    display: inline-block;
     text-decoration: none;
     color: #1f373d;
     font-family: Montserrat;
@@ -106,7 +107,7 @@ section.hero form input[type="search"]{
 section.hero form input[type="submit"]{
     font-family: Montserrat;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     color: #1f373d;
     padding: 27px;
     width: 115px;
@@ -114,6 +115,7 @@ section.hero form input[type="submit"]{
     border: 0;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
+    background-color: #ffcc01;
 }
 section.hero .scroll{
     position: absolute;
@@ -126,4 +128,57 @@ section.hero .scroll{
 section.hero .scroll span{
     font-weight: 500;
     margin-left: 12px;
+}
+section.our-company .content{
+    display: flex;
+    margin-top: 145px;
+    justify-content: space-between;
+    width: 100%;
+}
+section.our-company .content__text{
+    width: 48.64864864864865%;
+}
+section.our-company .content__text .text_title{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.25em;
+    letter-spacing: -1px;
+    color: #1f373d;
+    margin-bottom: 70px;
+}
+section.our-company .content__text .text_description{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 2.3em;
+    letter-spacing: -0.33px;
+    color: #1f373d;
+    margin-bottom: 40px;
+}
+section.our-company .content__stats{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 200px);
+    grid-gap: 30px;
+}
+section.our-company .content__stats .stats__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f5f4;
+    
+}
+section.our-company .content__stats .stats__item .item_title{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.25em;
+    letter-spacing: -1px;
+    color: #ffcc01;
+}
+section.our-company .content__stats .stats__item .item_subtitle{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 3.57em;
+    letter-spacing: -0.35px;
+    color: #1f373d;
 }

@@ -1,0 +1,129 @@
+@import "reset.css";
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+header a{
+    text-decoration: none;
+    color: #1f373d;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 600;
+}
+header .menu{
+    min-height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .menu .menu-logo a{
+    font-size: 25px;
+}
+header .menu .menu-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: capitalize;
+}
+header .menu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .menu ul a{
+    margin-right: 32px;
+}
+header .menu .menu-link ul a:last-child{
+    margin-right: 100px;
+}
+header .menu .link__contact a:first-child{
+    margin-right: 20px;
+}
+header .menu .link__contact a:last-child{
+    background-color: #ffcc01;
+    padding: 14px 25px;
+    border-radius: 5px;
+}
+section.hero{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    height: 631px;
+}
+section.hero .hero__bg{
+    width: 961px;
+    height: 631px;
+    background-color: #96bece;
+    position: absolute;
+    right: -55px;
+}
+section.hero .info{
+    display: flex;
+    position: absolute;
+    background-color: #ffcc01;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1f373d;
+    right: 0;
+    bottom: 0;
+}
+section.hero .info i{
+    font-size: 25px;
+    color: #fff;
+    margin-right: 30px;
+}
+section.hero .info div{
+    padding: 26px 33px;
+}
+section.hero form .title{
+    font-size: 62px;
+    font-weight: 600;
+    color: #1f373d;
+    letter-spacing: -1.54px;
+    margin-bottom: 48px;
+}
+section.hero form{
+    position: absolute;
+    top: 150px;
+    left: 0;
+}
+section.hero form input[type="search"]{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    color: #919eb1;
+    line-height: 15px;
+    padding: 27px;
+    padding-right: 0;
+    width: 338px;
+    border: 0;
+}
+section.hero form input[type="submit"]{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    color: #1f373d;
+    padding: 27px;
+    width: 115px;
+    margin-left: -4px;
+    border: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+section.hero .scroll{
+    position: absolute;
+    bottom: 42px;
+    left: -42px;    
+    color: #919eb1;
+    font-size: 12px;
+    transform: rotate(-90deg);
+}git --version
+section.hero .scroll span{
+    font-weight: 500;
+    margin-left: 12px;
+}

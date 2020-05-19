@@ -318,38 +318,9 @@ section.how-it-work .content .content__title .description{
     letter-spacing: -.33px;
     color: #1f373d;
 }
-section.how-it-work .content .content__info-box{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 90px;
-}
-section.how-it-work .content .content__info-box .box__item{
-    display: flex;
-    width: 31.5%;
-    box-shadow: 0 2px 25px rgba(23, 44, 51, 0.15);
-}
-section.how-it-work .content .content__info-box .box__item .item__number{
-    margin-right: 16px;
-}
-section.how-it-work .content .content__info-box .box__item .item__number span{
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 3.5em;
-    letter-spacing: -0.45px;
-    color: #1f373d; 
-}
-section.how-it-work .content .content__info-box .box__item .item__text .box_title{
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 3.5em;
-    letter-spacing: -0.45px;
-    color: #1f373d; 
-}
-section.how-it-work .content .content__info-box .box__item .item__text .box_description{
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 2.3em;
-    letter-spacing: -0.33px;
-    color: #1f373d;
+section.how-it-work .content__info-box .box_item{
+    width: 340px;
+    height: 470px;
+    background-color: #fff;
+    /* overflow: hidden; */
 }

@@ -515,3 +515,99 @@ section.agents .content__agent .agent__item .item__description
 div.agent__social i:last-child{
     margin-right: 0px;
 }
+section.adds .content__row .row__image{
+    width: 541px;
+    height: 331px;
+    background-color: #8da4be;
+}
+section.adds .content__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+    position: relative;
+}
+section.adds .content__first-row{
+    margin-top: 90px;
+}
+section.adds .content__row .row__text{
+    width: 40.5%;
+}
+section.adds .content__row .row__text .title{
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 2.5em;
+    letter-spacing: -0.63px;
+    color: #1f373d;
+    margin-bottom: 20px;
+}
+section.adds .content__row .row__text .description{
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 2.307em;
+    letter-spacing: -0.33px;
+    color: #1f373d;
+}
+section.adds .content__second-row .row__text{
+    text-align: right;
+}
+section.adds .content__row .row_geo-button{
+    position: absolute;
+    background-color: #ffcc01;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1f373d;
+    cursor: pointer;
+}
+section.adds .content__row .row_geo-button i{
+    font-size: 25px;
+    color: #fff;
+    margin-right: 30px;
+}
+section.adds .content__row .row_geo-button{
+    padding: 26px 33px;
+}
+section.adds .content__first-row .row_geo-button{
+    left: 110px;
+    bottom: -42px;
+}
+section.adds .content__second-row .row_geo-button{
+    right: -56px;
+    bottom: -31px;
+}
+section.adds .content__third-row .row__text .view-button{
+    display: inline-block;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 30px 55px;
+    color: #fff;
+    background-color: #1f373d;
+    margin-top: 33px;
+    cursor: pointer;
+}
+footer{
+    background-color: #1f373d;
+}
+footer section.newsletter form input[type='email']{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    color: #919eb1;
+    line-height: 15px;
+    padding: 26px;
+    padding-right: 0;
+    width: 338px;
+    border: 0;
+}
+footer section.newsletter form input[type='submit']{
+    border: 0;
+    font-size: 15px;
+    color: #919eb1;
+    font-weight: 400;
+    padding: 27px;
+    background-color: #fff;
+}

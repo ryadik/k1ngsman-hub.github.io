@@ -592,6 +592,26 @@ section.adds .content__third-row .row__text .view-button{
 footer{
     background-color: #1f373d;
 }
+footer section.newsletter{
+    min-height: 110px;
+}
+footer section.newsletter form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #919eb1;
+}
+footer section.newsletter form .title{
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.35em;
+    letter-spacing: -1px;
+    color: #fff;
+}
 footer section.newsletter form input[type='email']{
     font-family: Montserrat;
     font-size: 15px;
@@ -600,14 +620,73 @@ footer section.newsletter form input[type='email']{
     line-height: 15px;
     padding: 26px;
     padding-right: 0;
-    width: 338px;
+    width: 450px;
     border: 0;
 }
 footer section.newsletter form input[type='submit']{
-    border: 0;
-    font-size: 15px;
-    color: #919eb1;
+    position: absolute;
+    height: 71px;
+    width: 71px;
+    font-family: Montserrat;
+    font-size:35px;
     font-weight: 400;
-    padding: 27px;
-    background-color: #fff;
+    color: #919eb1;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    padding: 0;
+    right: 0;
+}
+footer section.info-links{
+    padding-top: 80px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+footer section.info-links .copyright{
+    width: 20%;
+}
+footer section.info-links .copyright .copyright_title{
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -0.63px;
+    color: #fff;
+    padding-bottom: 60px;
+}
+footer section.info-links .copyright .copyright_description{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4em;
+    letter-spacing: 0.14px;
+    color: #fff;
+}
+footer section.info-links .links{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+}
+footer section.info-links .link__columns{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+footer section.info-links .link__columns .column .title{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    color: #919eb1;
+    margin-bottom: 40px;
+}
+footer section.info-links .link__columns .column ul li{
+    text-transform: capitalize;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;
+}
+footer section.info-links .link__columns .column ul li:last-child{
+    margin-bottom: 0;
 }

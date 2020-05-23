@@ -16,7 +16,6 @@ header a{
     font-weight: 600;
 }
 header .menu{
-    position: relative;
     min-height: 95px;
     display: flex;
     justify-content: space-between;
@@ -53,7 +52,103 @@ header .menu .link__contact a:last-child{
     padding: 14px 25px;
     border-radius: 5px;
 }
+section.hero{
+    display: flex;
+    justify-content: flex-end;
+    height: 631px;
+}
+section.hero .hero__bg{
+    position: relative;
+    width: 961px;
+    height: 631px;
+    background-color: #96bece;
+    margin: 0 10px;
+}
+section.hero .info{
+    display: flex;
+    position: absolute;
+    background-color: #ffcc01;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1f373d;
+    right: 0;
+    bottom: 0;
+}
+section.hero .info i{
+    font-size: 25px;
+    color: #fff;
+    margin-right: 30px;
+}
+section.hero .info div{
+    padding: 26px 33px;
+}
+section.hero form .title{
+    font-size: 62px;
+    font-weight: 600;
+    color: #1f373d;
+    letter-spacing: -1.54px;
+    margin-bottom: 48px;
+}
+section.hero form{
+    position: absolute;
+    top: 150px;
+    left: -100px;
+}
+section.hero form input[type="search"]{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    color: #919eb1;
+    line-height: 15px;
+    padding: 27px;
+    padding-right: 0;
+    width: 338px;
+    border: 0;
+}
+section.hero form input[type="submit"]{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1f373d;
+    padding: 27px;
+    width: 115px;
+    margin-left: -4px;
+    border: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #ffcc01;
+}
+section.hero .scroll{
+    position: absolute;
+    bottom: 42px;
+    left: -135px;    
+    color: #919eb1;
+    font-size: 12px;
+    transform: rotate(-90deg);
+}
+section.hero .scroll span{
+    font-weight: 500;
+    margin-left: 12px;
+}
+@media screen and (max-width: 1110px){
+    section.hero .hero__bg{
+        margin: 0 auto;
+    }
+    section.hero form{
+        left: 0px;
+    }
+    section.hero .scroll{
+        display: none;
+    }
+}
 @media screen and (max-width: 960px){
+    body.active{
+        overflow: hidden;
+    }
+    header .menu{
+        z-index: 1;
+    }
     header .menu .menu__logo{
         margin-left: 10px;
     }
@@ -61,19 +156,22 @@ header .menu .link__contact a:last-child{
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-
+        
+        visibility: hidden;
         display: block;
         opacity: 0;
         position: absolute;
         right: 0px;
         top: 0px;
         padding: 40px 150px 100vh 20px;
-        z-index: 2;
+        z-index: -1;
         background-color: rgba(255, 204, 1, 0.9);
         box-shadow: 0 0 10px rgba(23, 44, 51, 0.15);
         transition: opacity .4s ease;
     }
     header .menu .menu__links.active{
+        visibility: visible;       
+        z-index: 2;
         opacity: 1;
     }
     header .menu ul{
@@ -150,87 +248,92 @@ header .menu .link__contact a:last-child{
         transform: rotate(45deg);
     }
 }
+@media screen and (max-width: 768px){
+    header .menu{
+        min-height: 75px;
+    }
+    section.hero form .title{
+        font-size: 55px;
+        margin-bottom: 30px;
+    }
+    section.hero form input[type="search"]{
+        padding: 20px 10px;
+        width: 250px;
+    }
+    section.hero form input[type="submit"]{
+        padding: 20px 10px;
+        width: 85px;
+    }
+    section.hero .info{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    section.hero .info i{
+        font-size: 18px;
+        margin-right: 15px;
+    }
+    section.hero .info div{
+        padding: 20px 25px;
+    }
+}
+@media screen and (max-width: 568px){
+    header .menu{
+        min-height: 65px;
+    }
+    section.hero form .title{
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    section.hero form input[type="search"]{
+        padding: 20px 10px;
+        width: 220px;
+    }
+}
+@media screen and (max-width: 425px){
+    section.hero form .title{
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+    section.hero form input[type="search"]{
+        font-size: 12px;
+        padding: 15px 10px;
+        width: 180px;
+    }
+    section.hero form input[type="submit"]{
+        font-size: 12px;
+        padding: 15px 10px;
+        width: 65px;
+    }
+    section.hero .info{
+        width: 100%;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    section.hero .info i{
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    section.hero .info div{
+        text-align: left;
+        padding: 20px 15px;
+        width: 40%;
+    }
+    section.hero .info div:last-child{
+        width: 50%;
+        text-align: right;
+    }
+}
+@media screen and (max-width: 340px){
+    section.hero form .title{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    section.hero .info div{
+        font-size: 11px;
+        padding: 15px 15px;
+    }
+}
 /*
-section.hero{
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    height: 631px;
-}
-section.hero .hero__bg{
-    width: 961px;
-    height: 631px;
-    background-color: #96bece;
-    position: absolute;
-    right: -55px;
-}
-section.hero .info{
-    display: flex;
-    position: absolute;
-    background-color: #ffcc01;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-    color: #1f373d;
-    right: 0;
-    bottom: 0;
-}
-section.hero .info i{
-    font-size: 25px;
-    color: #fff;
-    margin-right: 30px;
-}
-section.hero .info div{
-    padding: 26px 33px;
-}
-section.hero form .title{
-    font-size: 62px;
-    font-weight: 600;
-    color: #1f373d;
-    letter-spacing: -1.54px;
-    margin-bottom: 48px;
-}
-section.hero form{
-    position: absolute;
-    top: 150px;
-    left: 0;
-}
-section.hero form input[type="search"]{
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 400;
-    color: #919eb1;
-    line-height: 15px;
-    padding: 27px;
-    padding-right: 0;
-    width: 338px;
-    border: 0;
-}
-section.hero form input[type="submit"]{
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 500;
-    color: #1f373d;
-    padding: 27px;
-    width: 115px;
-    margin-left: -4px;
-    border: 0;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-    background-color: #ffcc01;
-}
-section.hero .scroll{
-    position: absolute;
-    bottom: 42px;
-    left: -42px;    
-    color: #919eb1;
-    font-size: 12px;
-    transform: rotate(-90deg);
-}
-section.hero .scroll span{
-    font-weight: 500;
-    margin-left: 12px;
-}
 section.our-company .content{
     display: flex;
     margin-top: 145px;
@@ -429,6 +532,10 @@ section.how-it-work .content__info-box .box__item{
     box-shadow: 0 2px 25px rgba(23, 44, 51, 0.15);
     overflow: hidden;
     border-radius: 5px;
+    color: #000;
+    transition: color .4s linear;
+    transition: background .5s linear;
+    
 }
 section.how-it-work .content__info-box .box__item:hover{
     background-color: #ffcc01;
@@ -445,6 +552,7 @@ section.how-it-work .content__info-box .box__item .item_number{
     position: relative;
     top: -50px;
     left: -30px;
+    transition: color .4s linear;
 }
 section.how-it-work .content__info-box .box__item .item_title{
     font-family: Montserrat;

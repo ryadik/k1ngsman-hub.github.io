@@ -131,6 +131,63 @@ section.hero .scroll span{
     font-weight: 500;
     margin-left: 12px;
 }
+section.our-company .content{
+    display: flex;
+    margin-top: 145px;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 75px;
+}
+section.our-company .content__text{
+    width: 48.64864864864865%;
+}
+section.our-company .content__text .text_title{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.25em;
+    letter-spacing: -1px;
+    color: #1f373d;
+    margin-bottom: 70px;
+}
+section.our-company .content__text .text_description{
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 2.3em;
+    letter-spacing: -0.33px;
+    color: #1f373d;
+}
+section.our-company .content__text .first-child{
+    margin-bottom: 40px;
+}
+section.our-company .content__stats{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 200px);
+    grid-gap: 30px;
+}
+section.our-company .content__stats .stats__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f5f4;
+    
+}
+section.our-company .content__stats .stats__item .item_title{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.25em;
+    letter-spacing: -1px;
+    color: #ffcc01;
+}
+section.our-company .content__stats .stats__item .item_subtitle{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 3.57em;
+    letter-spacing: -0.35px;
+    color: #1f373d;
+}
 @media screen and (max-width: 1110px){
     section.hero .hero__bg{
         margin: 0 auto;
@@ -275,6 +332,25 @@ section.hero .scroll span{
     section.hero .info div{
         padding: 20px 25px;
     }
+    section.our-company .content{
+        margin-top: 50px;
+        flex-direction: column;
+        text-align: center;
+    }
+    section.our-company .content .content__text{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    section.our-company .content .content__text .text_title{
+        margin-bottom: 30px;
+    }
+    section.our-company .content .content__text p:nth-child(2){
+        margin-bottom: 10px;
+    }
+    section.our-company .content .content__stats{
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 568px){
     header .menu{
@@ -289,7 +365,26 @@ section.hero .scroll span{
         width: 220px;
     }
 }
+@media screen and (max-width: 480px){
+    section.our-company .content__stats {
+        grid-template-columns: repeat(2, 170px);
+        grid-template-rows: repeat(2, 170px);
+        grid-gap: 20px;
+    }
+}
 @media screen and (max-width: 425px){
+    header .menu .menu__links{
+        padding: 0;
+        width: 100%;
+        padding-bottom: 100vh;
+    }
+    header .menu .menu__links ul{
+        padding-top: 40px;        
+        padding-left: 20px;
+    }        
+    header .menu .menu__links .link__contact{
+        padding-left: 20px;
+    }
     section.hero form .title{
         font-size: 35px;
         margin-bottom: 15px;
@@ -323,6 +418,13 @@ section.hero .scroll span{
         text-align: right;
     }
 }
+@media screen and (max-width: 375px){
+    section.our-company .content__stats {
+        grid-template-columns: repeat(2, 160px);
+        grid-template-rows: repeat(2, 160px);
+        grid-gap: 15px;
+    }
+}
 @media screen and (max-width: 340px){
     section.hero form .title{
         font-size: 30px;
@@ -332,65 +434,26 @@ section.hero .scroll span{
         font-size: 11px;
         padding: 15px 15px;
     }
+    section.our-company .content{
+        margin-top: 35px;
+    }
+    section.our-company .content .content__text .text_title{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    section.our-company .content__stats {
+        grid-template-columns: repeat(2, 145px);
+        grid-template-rows: repeat(2, 145px);
+        grid-gap: 15px;
+    }
+    section.our-company .content__stats .stats__item .item_title{
+        font-size: 35px;
+    }
+    section.our-company .content__stats .stats__item .item_subtitle{
+        font-size: 13px;
+    }
 }
 /*
-section.our-company .content{
-    display: flex;
-    margin-top: 145px;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 75px;
-}
-section.our-company .content__text{
-    width: 48.64864864864865%;
-}
-section.our-company .content__text .text_title{
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.25em;
-    letter-spacing: -1px;
-    color: #1f373d;
-    margin-bottom: 70px;
-}
-section.our-company .content__text .text_description{
-    display: block;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 2.3em;
-    letter-spacing: -0.33px;
-    color: #1f373d;
-}
-section.our-company .content__text .first-child{
-    margin-bottom: 40px;
-}
-section.our-company .content__stats{
-    display: grid;
-    grid-template-columns: repeat(2, 200px);
-    grid-template-rows: repeat(2, 200px);
-    grid-gap: 30px;
-}
-section.our-company .content__stats .stats__item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f6f5f4;
-    
-}
-section.our-company .content__stats .stats__item .item_title{
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.25em;
-    letter-spacing: -1px;
-    color: #ffcc01;
-}
-section.our-company .content__stats .stats__item .item_subtitle{
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 3.57em;
-    letter-spacing: -0.35px;
-    color: #1f373d;
-}
 section.appartments{
     background-repeat: no-repeat;
     background-color: #f6f5f4;

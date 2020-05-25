@@ -298,6 +298,94 @@ section.appartments form.search a{
     border-radius: 5px;
     background-color: #ffffff;
 }
+section.how-it-work .content .title{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.25em;
+    letter-spacing: -1px;
+    color: #1f373d;
+    margin-bottom: 20px;
+}
+section.how-it-work .content .content__title{
+    margin-top: 40px;
+    margin-left: 0;
+    margin-bottom: 55px;
+    width: 33%;
+}
+section.how-it-work .content .content__title .description{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 2.3em;
+    letter-spacing: -.33px;
+    color: #1f373d;
+}
+section.how-it-work .content__info-box{
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+section.how-it-work .content__info-box .box__item{
+    width: 345px;
+    height: 374px;
+    background-color: #fff;
+    box-shadow: 0 2px 25px rgba(23, 44, 51, 0.15);
+    overflow: hidden;
+    border-radius: 5px;
+    color: #000;
+    transition: color .4s linear;
+    transition: background .5s linear;
+    
+}
+section.how-it-work .content__info-box .box__item:hover{
+    background-color: #ffcc01;
+    color: #fff;
+}
+section.how-it-work .content__info-box .box__item:hover .item_number{
+    color: #fff;
+}
+section.how-it-work .content__info-box .box__item .item_number{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 132px;
+    color: #000;
+    position: relative;
+    top: -50px;
+    left: -30px;
+    transition: color .4s linear;
+}
+section.how-it-work .content__info-box .box__item .item_title{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.45px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+section.how-it-work .content__info-box .box__item .item_title span{
+    margin-right: 15px;
+}
+section.how-it-work .content__info-box .box__item .item_description{
+    font-family: Montserrat;
+    margin-left: 73px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.33px;
+    line-height: 2.3em;
+    margin-bottom: 15px;
+}
+section.how-it-work .content__info-box .box__item .item_subdescription{
+    display: inline-block;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 2.3em;
+    letter-spacing: -0.33px;
+    margin-left: 73px;
+    border-bottom: 3px solid #000;
+}
+section.how-it-work .content__info-box .box__item:hover .item_subdescription{
+    border-bottom: 3px solid #fff;
+}
 @media screen and (max-width: 1110px){
     section.hero .hero__bg{
         margin: 0 auto;
@@ -315,6 +403,22 @@ section.appartments form.search a{
         display: grid;
         grid-template-columns: repeat(2, 351px);
         justify-content: center;
+    }
+    section.how-it-work .content .content__title{
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    section.how-it-work .content__info-box{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    section.how-it-work .content__info-box .box__item:first-child{
+        margin-right: 50px;
+    }
+    section.how-it-work .content__info-box .box__item:last-child{
+        margin-top: 50px;
     } 
 }
 @media screen and (max-width: 960px){
@@ -472,6 +576,26 @@ section.appartments form.search a{
     section.appartments form.search input[type="search"]{
         width: 300px;
     }
+    section.how-it-work .content .content__title{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    section.how-it-work .content__info-box{
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    section.how-it-work .content__info-box .box__item{
+        margin-bottom: 30px;
+    }
+    section.how-it-work .content__info-box .box__item:first-child{
+        margin-right: 0px;
+    }
+    section.how-it-work .content__info-box .box__item:last-child{
+        margin-bottom: 0;
+        margin-top: 0px;
+    }
 
 }
 @media screen and (max-width: 568px){
@@ -561,6 +685,13 @@ section.appartments form.search a{
         width: 50%;
         text-align: right;
     }
+    section.how-it-work .content .content__title{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    section.how-it-work .content .content__title .title{
+        font-size: 35px;
+    }
 }
 @media screen and (max-width: 375px){
     section.our-company .content__stats {
@@ -583,6 +714,28 @@ section.appartments form.search a{
         width: 80px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    section.how-it-work .content .content__title{
+        width: 90%;
+    }
+    section.how-it-work .content__info-box .box__item{
+        width: 300px;
+        height: 326px;
+    }
+    section.how-it-work .content__info-box .box__item .item_title{
+        font-size: 17px;
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
+    section.how-it-work .content__info-box .box__item .item_description{
+        font-size: 13px;
+        margin-left: 48px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    section.how-it-work .content__info-box .box__item .item_subdescription{
+        font-size: 13px;
+        margin-left: 48px;
     }
 }
 @media screen and (max-width: 340px){
@@ -614,94 +767,6 @@ section.appartments form.search a{
     }
 }
 /*
-section.how-it-work .content .title{
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 1.25em;
-    letter-spacing: -1px;
-    color: #1f373d;
-    margin-bottom: 20px;
-}
-section.how-it-work .content .content__title{
-    margin-top: 40px;
-    margin-left: 0;
-    margin-bottom: 55px;
-    width: 33%;
-}
-section.how-it-work .content .content__title .description{
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 2.3em;
-    letter-spacing: -.33px;
-    color: #1f373d;
-}
-section.how-it-work .content__info-box{
-    margin-bottom: 90px;
-    display: flex;
-    justify-content: space-between;
-}
-section.how-it-work .content__info-box .box__item{
-    width: 345px;
-    height: 374px;
-    background-color: #fff;
-    box-shadow: 0 2px 25px rgba(23, 44, 51, 0.15);
-    overflow: hidden;
-    border-radius: 5px;
-    color: #000;
-    transition: color .4s linear;
-    transition: background .5s linear;
-    
-}
-section.how-it-work .content__info-box .box__item:hover{
-    background-color: #ffcc01;
-    color: #fff;
-}
-section.how-it-work .content__info-box .box__item:hover .item_number{
-    color: #fff;
-}
-section.how-it-work .content__info-box .box__item .item_number{
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 132px;
-    color: #000;
-    position: relative;
-    top: -50px;
-    left: -30px;
-    transition: color .4s linear;
-}
-section.how-it-work .content__info-box .box__item .item_title{
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 18px;
-    letter-spacing: -0.45px;
-    margin-left: 40px;
-    margin-bottom: 40px;
-}
-section.how-it-work .content__info-box .box__item .item_title span{
-    margin-right: 15px;
-}
-section.how-it-work .content__info-box .box__item .item_description{
-    font-family: Montserrat;
-    margin-left: 73px;
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: -0.33px;
-    line-height: 2.3em;
-    margin-bottom: 15px;
-}
-section.how-it-work .content__info-box .box__item .item_subdescription{
-    display: inline-block;
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 2.3em;
-    letter-spacing: -0.33px;
-    margin-left: 73px;
-    border-bottom: 3px solid #000;
-}
-section.how-it-work .content__info-box .box__item:hover .item_subdescription{
-    border-bottom: 3px solid #fff;
-}
 section.services .content .title{
     font-weight: 600;
     font-size: 40px;

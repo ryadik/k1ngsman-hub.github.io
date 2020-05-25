@@ -188,6 +188,116 @@ section.our-company .content__stats .stats__item .item_subtitle{
     letter-spacing: -0.35px;
     color: #1f373d;
 }
+section.appartments{
+    background-repeat: no-repeat;
+    background-color: #f6f5f4;
+    background: cover;
+}
+section.appartments .title{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.25em;
+    letter-spacing: -1px;
+    color: #1f373d;
+    padding: 50px 0 65px;
+}
+section.appartments .content__appart{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 35px;
+    margin-bottom: 60px;
+} 
+section.appartments .content__appart .appart__item {
+    box-shadow: 0 2px 25px rgba(23, 44, 51, 0.15);
+}
+section.appartments .content__appart .appart__item .item__img{
+    width: 351px;
+    height: 381px;
+    background-color: #b1d7e8;
+}
+section.appartments .content__appart .appart__item .item__description{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+section.appartments .content__appart .appart__item .item__description .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px 15px;
+}
+section.appartments .content__appart .appart__item .item__description .address{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.8em;
+    letter-spacing: -0.38px;
+    color: #1f373d;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+section.appartments .content__appart .appart__item .item__description .price{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2.777em;
+    letter-spacing: -0.38px;
+    color: #ffcc01;
+}
+section.appartments .content__appart .appart__item .item__description
+.info__shower i, .info__bed i{
+    font-size: 12px;
+    color: #0f0f0f;
+    line-height: 2.777em;
+}
+section.appartments .content__appart .appart__item .item__description
+.info__shower span, .info__bed span{
+    font-size: 13px;
+    color: #919eb1;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.33px;
+    line-height: 2.777em;
+}
+section.appartments form.search{
+    padding-bottom: 85px;
+}
+section.appartments form.search input[type="search"]{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    color: #919eb1;
+    line-height: 15px;
+    padding: 27px;
+    padding-right: 0;
+    width: 338px;
+    border: 0;
+}
+section.appartments form.search input[type="submit"]{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1f373d;
+    padding: 27px;
+    width: 115px;
+    margin-left: -4px;
+    border: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #ffcc01;
+}
+section.appartments form.search a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1f373d;
+    padding: 27px 50px;
+    margin-left: 40px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
 @media screen and (max-width: 1110px){
     section.hero .hero__bg{
         margin: 0 auto;
@@ -198,6 +308,14 @@ section.our-company .content__stats .stats__item .item_subtitle{
     section.hero .scroll{
         display: none;
     }
+    section.appartments .title{
+        text-align: center;
+    }
+    section.appartments .content__appart{
+        display: grid;
+        grid-template-columns: repeat(2, 351px);
+        justify-content: center;
+    } 
 }
 @media screen and (max-width: 960px){
     body.active{
@@ -351,6 +469,10 @@ section.our-company .content__stats .stats__item .item_subtitle{
     section.our-company .content .content__stats{
         justify-content: center;
     }
+    section.appartments form.search input[type="search"]{
+        width: 300px;
+    }
+
 }
 @media screen and (max-width: 568px){
     header .menu{
@@ -364,6 +486,28 @@ section.our-company .content__stats .stats__item .item_subtitle{
         padding: 20px 10px;
         width: 220px;
     }
+    section.appartments .content__appart{
+        display: grid;
+        grid-template-columns: repeat(1, 351px);
+    }
+    section.appartments form.search{
+        padding-bottom: 85px;
+        text-align: center;
+    }  
+    section.appartments form.search input[type="search"]{
+        width: 220px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    section.appartments form.search input[type="submit"]{
+        width: 95px;
+        padding: 20px;
+    }
+    section.appartments form.search a{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
 }
 @media screen and (max-width: 480px){
     section.our-company .content__stats {
@@ -424,6 +568,22 @@ section.our-company .content__stats .stats__item .item_subtitle{
         grid-template-rows: repeat(2, 160px);
         grid-gap: 15px;
     }
+    section.appartments .content__appart .appart__item .item__img{
+        width: 300px;
+        height: 326px;
+    }
+    section.appartments .content__appart{
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+    }
+    section.appartments form.search input[type="search"]{
+        width: 180px;
+    }
+    section.appartments form.search input[type="submit"]{
+        width: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 @media screen and (max-width: 340px){
     section.hero form .title{
@@ -454,114 +614,6 @@ section.our-company .content__stats .stats__item .item_subtitle{
     }
 }
 /*
-section.appartments{
-    background-repeat: no-repeat;
-    background-color: #f6f5f4;
-    background: cover;
-}
-section.appartments .title{
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.25em;
-    letter-spacing: -1px;
-    color: #1f373d;
-    padding: 50px 0 65px;
-}
-section.appartments .content__appart{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 35px;
-    margin-bottom: 60px;
-} 
-section.appartments .content__appart .appart__item {
-    box-shadow: 0 2px 25px rgba(23, 44, 51, 0.15);
-}
-section.appartments .content__appart .appart__item .item__img{
-    width: 351px;
-    height: 381px;
-    background-color: #b1d7e8;
-}
-section.appartments .content__appart .appart__item .item__description{
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-}
-section.appartments .content__appart .appart__item .item__description .info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 20px 15px;
-}
-section.appartments .content__appart .appart__item .item__description .address{
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 1.8em;
-    letter-spacing: -0.38px;
-    color: #1f373d;
-    padding-top: 15px;
-    padding-left: 20px;
-}
-section.appartments .content__appart .appart__item .item__description .price{
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 2.777em;
-    letter-spacing: -0.38px;
-    color: #ffcc01;
-}
-section.appartments .content__appart .appart__item .item__description
-.info__shower i, .info__bed i{
-    font-size: 12px;
-    color: #0f0f0f;
-    line-height: 2.777em;
-}
-section.appartments .content__appart .appart__item .item__description
-.info__shower span, .info__bed span{
-    font-size: 13px;
-    color: #919eb1;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: -0.33px;
-    line-height: 2.777em;
-}
-section.appartments form.search{
-    padding-bottom: 85px;
-}
-section.appartments form.search input[type="search"]{
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 400;
-    color: #919eb1;
-    line-height: 15px;
-    padding: 27px;
-    padding-right: 0;
-    width: 338px;
-    border: 0;
-}
-section.appartments form.search input[type="submit"]{
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 500;
-    color: #1f373d;
-    padding: 27px;
-    width: 115px;
-    margin-left: -4px;
-    border: 0;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-    background-color: #ffcc01;
-}
-section.appartments form.search button{
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 500;
-    color: #1f373d;
-    padding: 27px 50px;
-    margin-left: 40px;
-    border: 0;
-    border-radius: 5px;
-    background-color: #ffffff;
-}
 section.how-it-work .content .title{
     font-weight: 600;
     font-size: 40px;

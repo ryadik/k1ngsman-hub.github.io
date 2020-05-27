@@ -386,6 +386,93 @@ section.how-it-work .content__info-box .box__item .item_subdescription{
 section.how-it-work .content__info-box .box__item:hover .item_subdescription{
     border-bottom: 3px solid #fff;
 }
+
+section.services .content .title{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.25em;
+    letter-spacing: -1px;
+    color: #1f373d;
+    margin-bottom: 20px;
+}
+section.services .content .content__title{
+    margin-top: 40px;
+    margin-left: 0;
+    margin-bottom: 55px;
+    width: 33%;
+}
+section.services .content .content__title .description{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 2.3em;
+    letter-spacing: -.33px;
+    color: #1f373d;
+}
+section.services .content .content__service{
+    position: relative;
+}
+section.services .content .content__service .service__image{
+    display: inline-block;
+    width: 651px;
+    height: 631px;
+    background-color: #acd1e1;
+    position: absolute;
+    left: -111px;
+}
+section.services .content .content__service .service__text{
+    display: grid;
+    grid-template-columns: 450px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 44px;
+    justify-content: end;
+    margin-bottom: 80px;
+}
+section.services .content .content__service .service__text .item_title{
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 2em;
+    letter-spacing: -0.63px;
+    margin-bottom: 12px;
+    color: #1f373d;    
+}
+section.services .content .content__service .service__text .item_description{
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 2.3em;
+    letter-spacing: -0.33px;
+    color: #1f373d;    
+}
+@media screen and (max-width: 1368px){
+    section.services .content .content__service .service__image{
+        left: -30px;
+    }
+}
+@media screen and (max-width: 1200px){
+    section.services .content .content__service{
+        display: flex;
+        justify-content: space-around;
+    }
+    section.services .content .content__service .service__image{
+        width: 567px;
+        height: 550px;
+        position: relative;
+        left: 0;
+        display: inline-block;
+    }
+    section.services .content .content__service .service__text{
+        display: flex;
+        flex-direction: column;
+        width: 40.540540%;
+    }
+    section.services .content .content__service .service__text .text__item{
+        margin-top: 12px;
+    }
+    section.services .content .content__service .service__text .text__item:first-child{
+        margin-top: 0;
+    } 
+}
 @media screen and (max-width: 1110px){
     section.hero .hero__bg{
         margin: 0 auto;
@@ -419,6 +506,15 @@ section.how-it-work .content__info-box .box__item:hover .item_subdescription{
     }
     section.how-it-work .content__info-box .box__item:last-child{
         margin-top: 50px;
+    }
+    section.appartments form.search{
+        padding-bottom: 85px;
+        text-align: center;
+    }
+    section.services .content .content__title{
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 30px;
     } 
 }
 @media screen and (max-width: 960px){
@@ -526,6 +622,30 @@ section.how-it-work .content__info-box .box__item:hover .item_subdescription{
     header .menu .menu__burger.active:after{
         transform: rotate(45deg);
     }
+    section.services .content .content__service{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section.services .content .content__service .service__image{
+        width: 651px;
+        height: 631px;
+    }
+    section.services .content .content__service .service__text{
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    section.services .content .content__service .service__text .text__item:first-child{
+        margin-top: 40px;
+    }
+    section.services .content .content__service .service__text .text__item{
+        margin: 0;
+        text-align: center;
+        width: 40.540540%;
+        margin-top: 40px;
+    }
 }
 @media screen and (max-width: 768px){
     header .menu{
@@ -630,6 +750,20 @@ section.how-it-work .content__info-box .box__item:hover .item_subdescription{
     section.appartments form.search a{
         margin-left: 0;
         margin-top: 20px;
+    }
+    section.services .content .content__service .service__image {
+        width: 100%;
+        height: 70vh;
+    }
+    section.services .content .content__service .service__text{
+        flex-direction: column;
+        align-items: center;
+    }
+    section.services .content .content__service .service__text .text__item{
+        width: 70%;
+    }
+    section.services .content .content__title{
+        width: 80%;
     }
     
 }
@@ -737,6 +871,22 @@ section.how-it-work .content__info-box .box__item:hover .item_subdescription{
         font-size: 13px;
         margin-left: 48px;
     }
+    section.services .content .content__title{
+        width: 80%;
+    }
+    section.services .content .title{
+        margin-bottom: 0;
+    }
+    section.services .content .content__service .service__text .text__item{
+        width: 80%;
+        margin-top: 20px;
+    }
+    section.services .content .content__service .service__text .text__item:first-child{
+        margin-top: 20px;
+    }
+    section.services .content .content__service .service__text .item_title{
+        margin-bottom: 0;
+    }
 }
 @media screen and (max-width: 340px){
     section.hero form .title{
@@ -767,63 +917,6 @@ section.how-it-work .content__info-box .box__item:hover .item_subdescription{
     }
 }
 /*
-section.services .content .title{
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 1.25em;
-    letter-spacing: -1px;
-    color: #1f373d;
-    margin-bottom: 20px;
-}
-section.services .content .content__title{
-    margin-top: 40px;
-    margin-left: 0;
-    margin-bottom: 55px;
-    width: 33%;
-}
-section.services .content .content__title .description{
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 2.3em;
-    letter-spacing: -.33px;
-    color: #1f373d;
-}
-section.services .content .content__service{
-    position: relative;
-}
-section.services .content .content__service .service__image{
-    display: inline-block;
-    width: 651px;
-    height: 631px;
-    background-color: #acd1e1;
-    position: absolute;
-    left: -111px;
-}
-section.services .content .content__service .service__text{
-    display: grid;
-    grid-template-columns: 450px;
-    grid-template-rows: repeat(3, 1fr);
-    grid-row-gap: 44px;
-    justify-content: end;
-    margin-bottom: 80px;
-}
-section.services .content .content__service .service__text .item_title{
-    font-family: Montserrat;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 2em;
-    letter-spacing: -0.63px;
-    margin-bottom: 12px;
-    color: #1f373d;    
-}
-section.services .content .content__service .service__text .item_description{
-    font-family: Montserrat;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 2.3em;
-    letter-spacing: -0.33px;
-    color: #1f373d;    
-}
 section.agents{
     background-color: #f6f5f4;
     background-repeat: no-repeat;

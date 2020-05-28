@@ -444,6 +444,88 @@ section.services .content .content__service .service__text .item_description{
     letter-spacing: -0.33px;
     color: #1f373d;    
 }
+
+section.agents{
+    background-color: #f6f5f4;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.agents .content{
+    padding: 54px 0 96px;
+}
+section.agents .content .title{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.25em;
+    letter-spacing: -1px;
+    color: #1f373d;
+    margin-bottom: 20px;
+}
+section.agents .content .content__title{
+    margin-left: 0;
+    margin-bottom: 55px;
+    width: 33%;
+}
+section.agents .content .content__title .description{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 2.3em;
+    letter-spacing: -.33px;
+    color: #1f373d;
+}
+section.agents .content__agent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+} 
+section.agents .content__agent .agent__item {
+    box-shadow: 0 2px 25px rgba(23, 44, 51, 0.15);
+}
+section.agents .content__agent .agent__item .item__img{
+    width: 351px;
+    height: 381px;
+    background-color: #cdccce;
+}
+section.agents .content__agent .agent__item .item__description{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+section.agents .content__agent .agent__item .item__description .item__agent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px 15px;
+}
+section.agents .content__agent .agent__item .item__description .item_name{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.8em;
+    letter-spacing: -0.38px;
+    text-transform: capitalize;
+    color: #1f373d;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+section.agents .content__agent .agent__item .item__description .agent_name{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 2.777em;
+    letter-spacing: -0.38px;
+    text-transform: capitalize;
+    color: #ffcc01;
+}
+section.agents .content__agent .agent__item .item__description
+.agent__social i{
+    font-size: 15px;
+    color: #0f0f0f;
+    line-height: 2.777em;
+    margin-right: 33px;
+}
+section.agents .content__agent .agent__item .item__description
+div.agent__social i:last-child{
+    margin-right: 0px;
+}
 @media screen and (max-width: 1368px){
     section.services .content .content__service .service__image{
         left: -30px;
@@ -515,7 +597,28 @@ section.services .content .content__service .service__text .item_description{
         text-align: center;
         margin: 0 auto;
         margin-bottom: 30px;
-    } 
+    }
+    section.agents .content{
+        padding: 54px 0 55px;
+    }
+    section.agents .content .content__title{
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+    section.agents .content__agent{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    section.agents .content__agent .agent__item{
+        flex: 0 0 351px;
+        margin: 0 25px 50px;
+    }
+}
+@media screen and (max-width: 1024px){
+    section.agents .content .content__title{
+        width: 40%;
+    }
 }
 @media screen and (max-width: 960px){
     body.active{
@@ -646,6 +749,9 @@ section.services .content .content__service .service__text .item_description{
         width: 40.540540%;
         margin-top: 40px;
     }
+    section.agents .content .content__title{
+        width: 50%;
+    }
 }
 @media screen and (max-width: 768px){
     header .menu{
@@ -765,6 +871,9 @@ section.services .content .content__service .service__text .item_description{
     section.services .content .content__title{
         width: 80%;
     }
+    section.agents .content .content__title{
+        width: 80%;
+    }
     
 }
 @media screen and (max-width: 480px){
@@ -772,6 +881,15 @@ section.services .content .content__service .service__text .item_description{
         grid-template-columns: repeat(2, 170px);
         grid-template-rows: repeat(2, 170px);
         grid-gap: 20px;
+    }
+    section.agents .content{
+        padding: 54px 0 35px;
+    }
+    section.agents .content .content__title{
+        width: 90%;
+    }
+    section.agents .content .content__title .title{
+        font-size: 30px;
     }
 }
 @media screen and (max-width: 425px){
@@ -887,6 +1005,19 @@ section.services .content .content__service .service__text .item_description{
     section.services .content .content__service .service__text .item_title{
         margin-bottom: 0;
     }
+    section.agents .content__agent .agent__item{
+        /* width: 300px; */
+        flex: 0 0 300px;
+        height: 410px;
+        margin: 0 25px 35px;
+    }
+    section.agents .content__agent .agent__item .item__img{
+        width: 300px;
+        height: 325px;
+    }
+    section.agents .content__agent .agent__item .item__description .agent__social i{
+        margin-right: 20px;
+    }
 }
 @media screen and (max-width: 340px){
     section.hero form .title{
@@ -917,87 +1048,6 @@ section.services .content .content__service .service__text .item_description{
     }
 }
 /*
-section.agents{
-    background-color: #f6f5f4;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-section.agents .content{
-    padding: 54px 0 96px;
-}
-section.agents .content .title{
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 1.25em;
-    letter-spacing: -1px;
-    color: #1f373d;
-    margin-bottom: 20px;
-}
-section.agents .content .content__title{
-    margin-left: 0;
-    margin-bottom: 55px;
-    width: 33%;
-}
-section.agents .content .content__title .description{
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 2.3em;
-    letter-spacing: -.33px;
-    color: #1f373d;
-}
-section.agents .content__agent{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 30px;
-} 
-section.agents .content__agent .agent__item {
-    box-shadow: 0 2px 25px rgba(23, 44, 51, 0.15);
-}
-section.agents .content__agent .agent__item .item__img{
-    width: 351px;
-    height: 381px;
-    background-color: #cdccce;
-}
-section.agents .content__agent .agent__item .item__description{
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-}
-section.agents .content__agent .agent__item .item__description .item__agent{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 20px 15px;
-}
-section.agents .content__agent .agent__item .item__description .item_name{
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 1.8em;
-    letter-spacing: -0.38px;
-    text-transform: capitalize;
-    color: #1f373d;
-    padding-top: 15px;
-    padding-left: 20px;
-}
-section.agents .content__agent .agent__item .item__description .agent_name{
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 2.777em;
-    letter-spacing: -0.38px;
-    text-transform: capitalize;
-    color: #ffcc01;
-}
-section.agents .content__agent .agent__item .item__description
-.agent__social i{
-    font-size: 15px;
-    color: #0f0f0f;
-    line-height: 2.777em;
-    margin-right: 33px;
-}
-section.agents .content__agent .agent__item .item__description
-div.agent__social i:last-child{
-    margin-right: 0px;
-}
 section.adds .content__row .row__image{
     width: 541px;
     height: 331px;

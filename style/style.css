@@ -526,9 +526,88 @@ section.agents .content__agent .agent__item .item__description
 div.agent__social i:last-child{
     margin-right: 0px;
 }
+
+section.adds .content__row .row__image{
+    position: relative;
+    width: 541px;
+    height: 331px;
+    background-color: #8da4be;
+}
+section.adds .content__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+}
+section.adds .content__first-row{
+    margin-top: 90px;
+}
+section.adds .content__row .row__text{
+    width: 40.5%;
+}
+section.adds .content__row .row__text .title{
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 2.5em;
+    letter-spacing: -0.63px;
+    color: #1f373d;
+    margin-bottom: 20px;
+}
+section.adds .content__row .row__text .description{
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 2.307em;
+    letter-spacing: -0.33px;
+    color: #1f373d;
+}
+section.adds .content__second-row .row__text{
+    text-align: right;
+}
+section.adds .content__row .row__image .row_geo-button{
+    position: absolute;
+    background-color: #ffcc01;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1f373d;
+    cursor: pointer;
+    padding: 26px 33px;
+}
+section.adds .content__row .row__image .row_geo-button i{
+    font-size: 25px;
+    color: #fff;
+    margin-right: 30px;
+}
+section.adds .content__first-row .row__image .row_geo-button{
+    left: 110px;
+    bottom: -42px;
+}
+section.adds .content__second-row .row__image .row_geo-button{
+    right: -56px;
+    bottom: -31px;
+}
+section.adds .content__third-row .row__text .view-button{
+    display: inline-block;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 30px 55px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1f373d;
+    margin-top: 33px;
+    cursor: pointer;
+}
 @media screen and (max-width: 1368px){
     section.services .content .content__service .service__image{
         left: -30px;
+    }
+}
+@media screen and (max-width: 1280px){
+    section.adds .content__second-row .row__image .row_geo-button{
+        right: -31px;
     }
 }
 @media screen and (max-width: 1200px){
@@ -553,9 +632,16 @@ div.agent__social i:last-child{
     }
     section.services .content .content__service .service__text .text__item:first-child{
         margin-top: 0;
+    }
+    section.adds .content__second-row .row__image .row_geo-button{
+        right: 110px;
+        bottom: -42px;
     } 
 }
 @media screen and (max-width: 1110px){
+    .wrapper{
+        padding: 0 10px;
+    }
     section.hero .hero__bg{
         margin: 0 auto;
     }
@@ -752,6 +838,10 @@ div.agent__social i:last-child{
     section.agents .content .content__title{
         width: 50%;
     }
+    section.adds .content__row .row__image{
+        width: 470px;
+        height: 288px;   
+    }
 }
 @media screen and (max-width: 768px){
     header .menu{
@@ -822,7 +912,37 @@ div.agent__social i:last-child{
         margin-bottom: 0;
         margin-top: 0px;
     }
-
+    section.adds .content__row{
+        flex-direction: column;
+    }
+    section.adds .content__second-row{
+        flex-direction: column-reverse;
+    }
+    section.adds .content__second-row .row__text{
+        text-align: left;
+    }
+    section.adds .content__row .row__text{
+        width: 60%;
+    }
+    section.adds .content__row .row__text .title{
+        text-align: center;
+        margin: 0;
+        margin-top: 10px;
+    }
+    section.adds .content__first-row .row__image .row_geo-button{
+        bottom: 0px;
+        left: 0px;
+    }
+    section.adds .content__second-row .row__image .row_geo-button{
+        bottom: 0px;
+        right: 0px;
+    }
+    section.adds .content__third-row .row__text{
+        text-align: center;
+    }
+    section.adds .content__third-row .row__text .description{
+        text-align: left;
+    }
 }
 @media screen and (max-width: 568px){
     header .menu{
@@ -874,7 +994,9 @@ div.agent__social i:last-child{
     section.agents .content .content__title{
         width: 80%;
     }
-    
+    section.adds .content__row .row__text{
+        width: 85%;
+    }
 }
 @media screen and (max-width: 480px){
     section.our-company .content__stats {
@@ -890,6 +1012,19 @@ div.agent__social i:last-child{
     }
     section.agents .content .content__title .title{
         font-size: 30px;
+    }
+    section.adds .content__row{
+        margin-bottom: 60px;
+    }
+    section.adds .content__row .row__image{
+        width: 425px;
+        height: 260px;
+    }
+    section.adds .content__row .row__image .row_geo-button{
+        padding: 20px;
+    }
+    section.adds .content__row .row__image .row_geo-button i{
+        margin-right: 20px;
     }
 }
 @media screen and (max-width: 425px){
@@ -944,6 +1079,13 @@ div.agent__social i:last-child{
     section.how-it-work .content .content__title .title{
         font-size: 35px;
     }
+    section.adds .content__row .row__image{
+        width: 375px;
+        height: 229px;
+    }
+    section.adds .content__row .row__text .title{
+        font-size: 22px;
+    }
 }
 @media screen and (max-width: 375px){
     section.our-company .content__stats {
@@ -960,7 +1102,7 @@ div.agent__social i:last-child{
         grid-template-columns: repeat(1, 300px);
     }
     section.appartments form.search input[type="search"]{
-        width: 180px;
+        width: 179px;
     }
     section.appartments form.search input[type="submit"]{
         width: 80px;
@@ -1018,6 +1160,16 @@ div.agent__social i:last-child{
     section.agents .content__agent .agent__item .item__description .agent__social i{
         margin-right: 20px;
     }
+    section.adds .content__row{
+        margin-bottom: 40px;
+    }
+    section.adds .content__row .row__image{
+        width: 340px;
+        height: 208px;
+    }
+    section.adds .content__row .row__text{
+        width: 90%;
+    }
 }
 @media screen and (max-width: 340px){
     section.hero form .title{
@@ -1046,82 +1198,27 @@ div.agent__social i:last-child{
     section.our-company .content__stats .stats__item .item_subtitle{
         font-size: 13px;
     }
+    section.adds .content__row .row__image{
+        width: 300px;
+        height: 184px;
+    }
+    section.adds .content__row .row__image .row_geo-button{
+        line-height: 18px;
+        font-size: 14px;
+        padding: 10px;
+    }
+    section.adds .content__row .row__image .row_geo-button i{
+        font-size: 18px;
+        margin-right: 7px;
+    }
+    section.adds .content__row .row__text{
+        width: 95%;
+    }
+    section.adds .content__row .row__text .description{
+        font-size: 12px;
+    }
 }
 /*
-section.adds .content__row .row__image{
-    width: 541px;
-    height: 331px;
-    background-color: #8da4be;
-}
-section.adds .content__row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 90px;
-    position: relative;
-}
-section.adds .content__first-row{
-    margin-top: 90px;
-}
-section.adds .content__row .row__text{
-    width: 40.5%;
-}
-section.adds .content__row .row__text .title{
-    font-family: Montserrat;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 2.5em;
-    letter-spacing: -0.63px;
-    color: #1f373d;
-    margin-bottom: 20px;
-}
-section.adds .content__row .row__text .description{
-    font-family: Montserrat;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 2.307em;
-    letter-spacing: -0.33px;
-    color: #1f373d;
-}
-section.adds .content__second-row .row__text{
-    text-align: right;
-}
-section.adds .content__row .row_geo-button{
-    position: absolute;
-    background-color: #ffcc01;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-    color: #1f373d;
-    cursor: pointer;
-}
-section.adds .content__row .row_geo-button i{
-    font-size: 25px;
-    color: #fff;
-    margin-right: 30px;
-}
-section.adds .content__row .row_geo-button{
-    padding: 26px 33px;
-}
-section.adds .content__first-row .row_geo-button{
-    left: 110px;
-    bottom: -42px;
-}
-section.adds .content__second-row .row_geo-button{
-    right: -56px;
-    bottom: -31px;
-}
-section.adds .content__third-row .row__text .view-button{
-    display: inline-block;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 30px 55px;
-    color: #fff;
-    background-color: #1f373d;
-    margin-top: 33px;
-    cursor: pointer;
-}
 footer{
     background-color: #1f373d;
 }
